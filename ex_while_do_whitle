@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+// exp aula
+
+int main() {
+	double nota, media, soma;
+	int n;
+	
+	n=0;
+	soma=0;
+	
+	cout << "digite as notas: ";
+	cin >> nota;
+	
+    while (nota != -1) {
+    soma = soma + nota;
+	n++;
+	cout << "digite as notas: ";
+	cin >> nota;
+	
+   }
+    if (n>0) {
+    media = soma/n;
+    cout << "media vai ser: " << media << endl;
+	}
+	
+	return 0;
+}
+
+
+  /* do { 
+      cin >> nota;
+      soma = soma + nota;
+      n++;
+  } while (nota != -1); */
